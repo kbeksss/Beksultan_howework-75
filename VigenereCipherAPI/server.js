@@ -6,9 +6,6 @@ const decoder = require('./app/decoder');
 
 app.use(cors());
 app.use(express.json());
-app.get('/', (req, res) => {
-    res.send('It\'s working maaan');
-});
 app.use('/encode', encoder);
 app.use('/decode', decoder);
 
